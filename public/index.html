@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SpaceChat</title>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="chat-sidebar">
+            <header>
+            <h2>Chatters</h2>
+            </header>
+            <ul class="contact-list" style="list-style-type: none; align-items: center;"></ul>
+        </div>
+        <div class="chat-box">
+          <div class="chat-box-header">
+            <h3 style="color: rgb(208,198,192)">SpaceChat<br /></h3>
+          </div>
+          <div id="chat_box_body" class="chat-box-body">
+            <div class="chat-messages" id="messages">
+            </div>
+          </div>
+          <div class="chat-box-footer">
+            <input type="text" id="message-input" placeholder="Beep your message here...">
+            <button id="send-message-button">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#cb6528" d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="client.js"></script>
+</body>
+</html>
+
